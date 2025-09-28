@@ -738,7 +738,7 @@ select.form-control {
 }
 
 /* END PERPLEXITY DESIGN SYSTEM */
-/* Additional styles for FIL101 Study Guide - Module Version */
+/* Enhanced styles for FIL101 Comprehensive Study Guide */
 
 /* Filipino Color Scheme with Module Categories */
 :root {
@@ -754,6 +754,11 @@ select.form-control {
   --color-social: #5d878f;
   --color-varieties: #ffc185;
   --color-applications: #b4413c;
+  
+  /* Difficulty Colors */
+  --color-easy: #4ade80;
+  --color-medium: #f59e0b;
+  --color-hard: #ef4444;
 }
 
 /* App Header */
@@ -826,7 +831,7 @@ select.form-control {
 
 .dashboard-stats {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: var(--space-16);
   margin-bottom: var(--space-32);
 }
@@ -838,6 +843,12 @@ select.form-control {
   padding: var(--space-20);
   text-align: center;
   box-shadow: var(--shadow-sm);
+  transition: transform var(--duration-fast) var(--ease-standard);
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
 }
 
 .stat-number {
@@ -1031,7 +1042,7 @@ select.form-control {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: var(--space-32);
+  margin-bottom: var(--space-24);
   flex-wrap: wrap;
   gap: var(--space-16);
 }
@@ -1050,11 +1061,43 @@ select.form-control {
 .study-header h2 {
   color: var(--color-filipino-blue);
   font-size: var(--font-size-2xl);
+  margin-bottom: var(--space-4);
+}
+
+.module-desc {
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+  margin: 0;
 }
 
 .study-progress {
   font-weight: var(--font-weight-medium);
   color: var(--color-text-secondary);
+}
+
+/* Learning Objectives */
+.learning-objectives {
+  background: var(--color-bg-3);
+  border-radius: var(--radius-lg);
+  padding: var(--space-20);
+  margin-bottom: var(--space-24);
+  border: 1px solid rgba(var(--color-success-rgb), 0.2);
+}
+
+.learning-objectives h3 {
+  color: var(--color-success);
+  margin-bottom: var(--space-12);
+  font-size: var(--font-size-lg);
+}
+
+.learning-objectives ul {
+  margin: 0;
+  padding-left: var(--space-20);
+}
+
+.learning-objectives li {
+  margin-bottom: var(--space-8);
+  line-height: var(--line-height-normal);
 }
 
 .study-card-container {
@@ -1066,14 +1109,16 @@ select.form-control {
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-card-border);
   box-shadow: var(--shadow-md);
-  min-height: 300px;
+  min-height: 400px;
   display: flex;
-  align-items: center;
+  align-items: stretch;
 }
 
 .card-content {
   padding: var(--space-32);
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-title {
@@ -1085,6 +1130,12 @@ select.form-control {
 .card-body {
   color: var(--color-text);
   line-height: var(--line-height-normal);
+  flex: 1;
+  font-size: var(--font-size-base);
+}
+
+.card-body p {
+  margin-bottom: var(--space-16);
 }
 
 .card-body ul {
@@ -1096,10 +1147,61 @@ select.form-control {
   margin-bottom: var(--space-8);
 }
 
+.card-actions {
+  display: flex;
+  gap: var(--space-8);
+  margin-top: var(--space-20);
+  padding-top: var(--space-16);
+  border-top: 1px solid var(--color-card-border-inner);
+}
+
 .study-navigation {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: var(--space-24);
+}
+
+.card-indicator {
+  display: flex;
+  align-items: center;
+}
+
+.card-dots {
+  display: flex;
+  gap: var(--space-6);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-border);
+  transition: background var(--duration-fast) var(--ease-standard);
+}
+
+.dot.active {
+  background: var(--color-primary);
+}
+
+/* Notes Section */
+.notes-section {
+  background: var(--color-bg-2);
+  border-radius: var(--radius-lg);
+  padding: var(--space-20);
+  margin-bottom: var(--space-24);
+  border: 1px solid rgba(var(--color-warning-rgb), 0.2);
+}
+
+.notes-section h4 {
+  color: var(--color-warning);
+  margin-bottom: var(--space-12);
+}
+
+.notes-actions {
+  display: flex;
+  gap: var(--space-8);
+  margin-top: var(--space-12);
 }
 
 .study-actions {
@@ -1173,6 +1275,33 @@ select.form-control {
   min-height: 400px;
 }
 
+.question-difficulty {
+  display: inline-block;
+  padding: var(--space-4) var(--space-12);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-16);
+}
+
+.question-difficulty.easy {
+  background: rgba(74, 222, 128, 0.15);
+  color: var(--color-easy);
+  border: 1px solid rgba(74, 222, 128, 0.25);
+}
+
+.question-difficulty.medium {
+  background: rgba(245, 158, 11, 0.15);
+  color: var(--color-medium);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+.question-difficulty.hard {
+  background: rgba(239, 68, 68, 0.15);
+  color: var(--color-hard);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+}
+
 .question-text {
   color: var(--color-text);
   margin-bottom: var(--space-24);
@@ -1235,23 +1364,30 @@ select.form-control {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: left;
   box-shadow: var(--shadow-md);
 }
 
 .feedback-content {
   margin-bottom: var(--space-24);
+  width: 100%;
+}
+
+.feedback-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-12);
+  margin-bottom: var(--space-16);
 }
 
 .feedback-icon {
-  font-size: 48px;
-  margin-bottom: var(--space-16);
+  font-size: 32px;
 }
 
 .feedback-text {
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
-  margin-bottom: var(--space-12);
+  margin: 0;
 }
 
 .feedback-text.correct {
@@ -1263,13 +1399,14 @@ select.form-control {
 }
 
 .feedback-explanation {
-  color: var(--color-text-secondary);
+  color: var(--color-text);
   line-height: var(--line-height-normal);
+  font-size: var(--font-size-base);
 }
 
 /* Quiz Results */
 .quiz-results {
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
   text-align: center;
 }
@@ -1303,10 +1440,11 @@ select.form-control {
 }
 
 .score-circle {
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0 auto var(--space-24);
@@ -1320,6 +1458,12 @@ select.form-control {
   color: var(--color-filipino-blue);
 }
 
+.score-grade {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-medium);
+}
+
 .results-summary {
   font-size: var(--font-size-lg);
   color: var(--color-text);
@@ -1331,6 +1475,7 @@ select.form-control {
   justify-content: space-around;
   gap: var(--space-16);
   flex-wrap: wrap;
+  margin-bottom: var(--space-24);
 }
 
 .breakdown-item {
@@ -1357,12 +1502,101 @@ select.form-control {
   color: var(--color-error);
 }
 
+/* Performance Analysis */
+.performance-analysis {
+  background: var(--color-bg-1);
+  border-radius: var(--radius-base);
+  padding: var(--space-16);
+  text-align: left;
+}
+
+.performance-analysis h4 {
+  margin-bottom: var(--space-12);
+  font-size: var(--font-size-base);
+}
+
+.difficulty-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.difficulty-stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-size-sm);
+}
+
+.difficulty-label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.difficulty-badge {
+  padding: var(--space-2) var(--space-6);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+}
+
+.difficulty-badge.easy {
+  background: rgba(74, 222, 128, 0.15);
+  color: var(--color-easy);
+}
+
+.difficulty-badge.medium {
+  background: rgba(245, 158, 11, 0.15);
+  color: var(--color-medium);
+}
+
+.difficulty-badge.hard {
+  background: rgba(239, 68, 68, 0.15);
+  color: var(--color-hard);
+}
+
 .results-actions {
   display: flex;
   gap: var(--space-16);
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: column;
+  align-items: center;
+}
+
+/* Review Mode */
+.review-mode {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-16);
+  margin-bottom: var(--space-32);
+}
+
+.review-header h2 {
+  color: var(--color-filipino-red);
+}
+
+.review-container {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-card-border);
+  padding: var(--space-32);
+  box-shadow: var(--shadow-md);
+}
+
+.review-question {
+  margin-bottom: var(--space-24);
+}
+
+.review-navigation {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -1388,6 +1622,10 @@ select.form-control {
   .dashboard-actions {
     flex-direction: column;
     align-items: center;
+  }
+  
+  .dashboard-stats {
+    grid-template-columns: repeat(2, 1fr);
   }
   
   .study-header,
@@ -1418,7 +1656,15 @@ select.form-control {
     padding: var(--space-20);
   }
 
-  .dashboard-stats {
-    grid-template-columns: 1fr;
+  .results-breakdown {
+    justify-content: center;
+  }
+
+  .card-actions {
+    flex-direction: column;
+  }
+
+  .notes-actions {
+    flex-direction: column;
   }
 }
