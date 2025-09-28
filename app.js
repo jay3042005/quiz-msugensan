@@ -1,266 +1,318 @@
-// FIL101 Study Guide Application
+// FIL101 Study Guide Application - Module Version
 
-// Application Data
+// Application Data with 11 Modules
 const appData = {
-  topics: [
+  modules: [
     {
-      id: 1,
-      title: "Depinisyon at Pananaw ng Wika",
+      moduleNumber: 1,
+      title: "Depinisyon ng Wika at iba't ibang Pananaw ng Wika",
       description: "Basic definitions and different perspectives on language",
+      category: "Foundation",
+      color: "foundation",
       keyPoints: [
         "Wika - sistematikong kaayusan ng mga tunog, salita, at tuntunin",
-        "Pananaw na Kognitibo - wika bilang produkto ng isip",
-        "Pananaw na Sosyolinggwistiko - wika bilang instrumento ng pakikipag-ugnayan",
-        "Pananaw na Structuralist - wika bilang sistema ng mga palatandaan",
-        "Pananaw na Functionalist - wika bilang kasangkapan para sa komunikasyon",
-        "Pananaw na Interaksyonal - wika bilang paraan ng pakikipag-ugnayan",
-        "Pananaw na Kultural - wika bilang tagapag-ingat ng kultura"
+        "Pananaw na Linggwistiko - Ferdinand de Saussure (arbitraryong tanda)",
+        "Pananaw na Sosyolohikal - Leonard Bloomfield (kabuuan ng pahayag)",
+        "Pananaw na Sikolohikal - Noam Chomsky (likas na kakayahan)",
+        "Pananaw na Kultural - Sapir-Whorf (salamin ng kultura)",
+        "Pananaw na Pampolitika - wika bilang instrumento ng kapangyarihan"
       ],
       examples: [
-        "Ferdinand de Saussure - arbitraryong tanda na nag-uugnay sa anyo at kahulugan",
-        "Leonard Bloomfield - kabuuan ng mga pahayag sa speech community",
-        "Edward Sapir at Benjamin Whorf - salamin at tagahubog ng kultura",
-        "Noam Chomsky - likas sa tao ang kakayahang magwika"
+        "Saussure: signifier + signified = sign",
+        "Bloomfield: totality of utterances in speech community",
+        "Chomsky: Language Acquisition Device (LAD)",
+        "Sapir-Whorf: linguistic relativity hypothesis"
       ]
     },
     {
-      id: 2,
-      title: "Kahalagahan at Katangian ng Wika",
-      description: "Importance and characteristics of language",
+      moduleNumber: 2,
+      title: "Kahalagahan, Kaligiran at Katangian ng Wika",
+      description: "Importance, background, and characteristics of language",
+      category: "Foundation",
+      color: "foundation",
       keyPoints: [
-        "Kasangkapan ng Komunikasyon",
-        "Nagbubuklod ng Lipunan",
-        "Pag-iingat at Pagpapalaganap ng Kaalaman at Kultura",
-        "Instrumento ng Pagkatuto at Pag-unlad",
-        "Pagpapahayag ng Damdamin at Sining",
-        "Mayroong sistemang balangkas",
-        "Sinasalitang tunog",
-        "Arbitraryo",
-        "Buhay at dinamiko",
-        "Nanghihiram",
-        "Kaakibat at salamin ng kultura",
-        "Patuloy na ginagamit",
-        "Pantao",
-        "Komunikasyon",
-        "Malikhain at natatangi"
+        "Kahalagahan: Komunikasyon, pagbubuklod, pag-iingat ng kultura",
+        "Kaligiran: Makasaysayan, panlipunan, kultural na konteksto",
+        "Katangian: Masistema, sinasalitang tunog, arbitraryo",
+        "Buhay at dinamiko - patuloy na nagbabago",
+        "Nanghihiram - tumatanggap ng mga salita mula sa ibang wika",
+        "Salamin ng kultura - nagpapakita ng mga kaugalian"
       ],
       examples: [
-        "Filipino bilang pambansang wika na nag-uugnay sa Pilipinas",
-        "Mga epiko tulad ng Biag ni Lam-ang at Darangen",
-        "Hiram na salita: computer - kompyuter, jeep - dayip",
-        "Pagbabago sa kahulugan: Tablet (gamot → gadget)"
+        "Filipino - pambansang wika na nag-uugnay",
+        "Mga hiram: computer → kompyuter",
+        "Pagbabago: tablet (gamot → gadget)",
+        "Kulturang Pilipino: 'po' at 'opo' (respeto)"
       ]
     },
     {
-      id: 3,
-      title: "Varayti at Varyasyon ng Wika",
-      description: "Different varieties and variations of language use",
+      moduleNumber: 3,
+      title: "Mga teorya sa pinagmulan at pagkatuto ng Wika",
+      description: "Theories about language origin and acquisition",
+      category: "Foundation",
+      color: "foundation",
       keyPoints: [
-        "Dayalek - ginagamit sa tiyak na lugar o pook",
-        "Idyolek - natatanging paraan ng pagsasalita ng bawat tao",
-        "Sosyolek - ginagamit ng partikular na grupo",
-        "Etnolek - ginagamit ng mga pangkat etniko",
-        "Ekolek - ginagamit sa loob ng bahay o tahanan",
-        "Register - ginagamit depende sa sitwasyon, lugar, at kausap",
-        "Varyasyong Leksikal - pagkakaiba sa salita o kahulugan",
-        "Varyasyong Ponolohikal - pagkakaiba ng tunog o pagbigkas",
-        "Varyasyong Gramatikal - paraan ng pagbubuo ng mga salita"
+        "Teoryang Bow-wow - panggagaya sa tunog ng kalikasan",
+        "Teoryang Ding-dong - mula sa tunog ng mga bagay",
+        "Teoryang Pooh-pooh - mula sa emosyon at damdamin",
+        "Teoryang Ta-ra-ra-boom-de-ay - mula sa ritwal",
+        "Teoryang Divine Origin - binigay ng Diyos",
+        "Teorya ni Chomsky - Language Acquisition Device"
       ],
       examples: [
-        "Tagalog: 'Kumain ka na ba?' vs Cebuano: 'Ni kaon naka?'",
-        "Willie Revillame: 'Bigyan ng jacket yan'",
-        "Kuya Kim Atienza: 'Ang buhay ay weather-weather lang'",
-        "Kabataan: 'Erp' (Pre), Doktor: 'Diagnosis, Prescription'",
-        "Sa paaralan: 'Magandang umaga po, Teacher' vs Sa kaibigan: 'Uy, musta na?'"
+        "Bow-wow: aso (aw-aw), pusa (meow)",
+        "Ding-dong: kampana (ding-dong)",
+        "Pooh-pooh: 'Aray!' (sakit)",
+        "LAD: likas na grammar sa utak"
       ]
     },
     {
-      id: 4,
-      title: "Idyolek, Dayalek, Sosyolek",
-      description: "Individual, dialectal, and social language varieties",
+      moduleNumber: 4,
+      title: "Ugnayan ng Wika sa Kultura at lipunan",
+      description: "Relationship between language, culture, and society",
+      category: "Social",
+      color: "social",
       keyPoints: [
-        "Idyolek - natatanging istilo ng pamamahayag ng bawat indibidwal",
-        "Dayalek - wikang ginagamit sa tiyak na pook o rehiyon",
-        "Sosyolek - barayti ng wika batay sa katayuang panlipunan",
-        "Uri ng Dayalek: Sosyal, Diskretong, Dayalektikal na Baryasyon",
-        "Uri ng Sosyolek: Jargon, Slang, Gay Lingo, Conyo Speak, Jejemon",
-        "Mga salik: karanasan, pinagmulan, edukasyon, paniniwala, personalidad"
+        "Wika bilang salamin ng kultura",
+        "Linguistic Relativity - wika nakakaaapekto sa pag-iisip",
+        "Bokabularyo - nagpapakita ng mga priorities ng kultura",
+        "Code-switching - paggamit ng dalawa o higit pang wika",
+        "Diglossia - high variety vs low variety ng wika",
+        "Language maintenance vs language shift"
       ],
       examples: [
-        "Mike Enriquez: 'Excuse me po!' at 'Hindi namin kayo tatantanan!'",
-        "Jessica Soho: 'i-KMJS na yan!'",
-        "Cebuano: 'Kumusta man ka?', Hiligaynon: 'Diin ka makadto?'",
-        "Gay Lingo: 'Charot!', 'Shumalamush', 'Thunder cats'",
-        "Conyo: 'Let's make kain na', Jejemon: 'Eowh pFuh! MuZtaH nA aQuh?'"
+        "Inuit - maraming salita para sa 'snow'",
+        "Filipino - maraming salita para sa 'bigas'",
+        "Taglish: 'Let's make kain na'",
+        "Formal Filipino (mataas) vs Kolokyal (mababa)"
       ]
     },
     {
-      id: 5,
-      title: "Lingua Franca, Pidgin, Creole",
-      description: "Contact languages and their development",
-      keyPoints: [
-        "Lingua Franca - ginagamit ng dalawa o higit pang indibidwal na may magkaibang wika",
-        "Pidgin - pinasimpleng anyo ng pananalita para sa basic communication",
-        "Creole - natural na wika na nabuo mula sa pidgin",
-        "Lingua Franca: tulay ng komunikasyon, trade languages",
-        "Pidgin: walang native speakers, limitadong gramatika",
-        "Creole: may matatag na grammar, natutuhan bilang unang wika"
-      ],
-      examples: [
-        "Ingles - lingua franca sa internasyonal na antas",
-        "Filipino - lingua franca sa Pilipinas",
-        "Nigerian Pidgin English: 'Pain you well well'",
-        "Chavacano: 'Donde tu hay anda?' (anong ginagawa mo?)",
-        "Tok Pisin sa Papua New Guinea"
-      ]
-    },
-    {
-      id: 6,
-      title: "Sosyolinggwistika at Speech Community",
-      description: "Study of language in social context and speech communities",
+      moduleNumber: 5,
+      title: "Ang Sosyolinggwistika at Ang Speech Community",
+      description: "Sociolinguistics and speech community concepts",
+      category: "Social",
+      color: "social",
       keyPoints: [
         "Sosyolinggwistika - pag-aaral ng ugnayan ng wika at lipunan",
-        "Speech Community - grupo na may iisang hanay ng kaugalian sa wika",
+        "Speech Community - grupong may iisang wika at kaugalian",
         "Mikro-sosyolinggwistika vs Makro-sosyolinggwistika",
-        "Katangian: Shared Linguistic Norms, Common Language Variety, Regular Interaction, Shared Identity",
-        "5 Elemento: Population, Area, Facility, Identification, Interaction"
+        "5 elemento: Population, Area, Facility, Identification, Interaction",
+        "Linguistic norms - mga pamantayan sa paggamit ng wika"
       ],
       examples: [
-        "Tagalog Speech Community - karatig-probinsya ng Maynila",
-        "Cebuano Speech Community - Gitnang at Katimugang Visayas",
-        "Professional Communities - doktor, abogado, guro",
-        "Digital Speech Communities - Filipino TikTok, Online Gaming",
-        "Code-switching: 'Okay class, open your notebooks'"
+        "Tagalog Speech Community - karatig probinsya ng Maynila",
+        "Cebuano Speech Community - Visayas region",
+        "Professional communities - mga doktor, abogado",
+        "Online communities - Filipino netizens"
       ]
     },
     {
-      id: 7,
-      title: "Gamit ng Wika (Halliday)",
-      description: "Seven functions of language according to Halliday",
+      moduleNumber: 6,
+      title: "Ang Sosyolinggwistika at Speech Community (Part 2)",
+      description: "Extended study of sociolinguistics applications",
+      category: "Social",
+      color: "social",
       keyPoints: [
-        "Instrumental - ipahayag ang pangangailangan",
-        "Regulatori - kontrolin at gabayan ang kilos ng iba",
-        "Interaksyonal - mapanatili ang ugnayan sa kapwa",
-        "Personal - ipahayag ang sariling saloobin at damdamin",
-        "Heuristiko - magtanong at mag-imbestiga",
-        "Imahinatibo - malikhaing paggamit ng wika",
-        "Representatibo - magpahayag ng impormasyon at datos"
+        "Ethnography of Communication - pag-aaral ng komunikasyon sa kultura",
+        "SPEAKING model - Setting, Participants, Ends, Act, Key, Instrumentalities, Norms, Genre",
+        "Language attitudes - saloobin tungkol sa wika",
+        "Prestige varieties vs stigmatized varieties",
+        "Accommodation theory - pag-adjust ng wika"
       ],
       examples: [
-        "Instrumental: 'Pabili po ng dalawang order ng adobo'",
-        "Regulatori: 'Bawal Tumawid, Nakamamatay'",
-        "Interaksyonal: 'Kumusta ka na?'",
-        "Personal: 'Masaya ako dahil mataas ang grado ko'",
-        "Heuristiko: 'Bakit umiitim ang ulap bago umulan?'",
-        "Imahinatibo: pagsulat ng tula, kwento",
-        "Representatibo: 'Ang 2+2 ay katumbas ng 4'"
+        "Code-switching sa classroom",
+        "Formal register sa opisina",
+        "Informal register sa kaibigan",
+        "Regional pride sa sariling wika"
       ]
     },
     {
-      id: 8,
-      title: "Mga Teorya ng Pinagmulan ng Wika",
-      description: "Theories about the origin and acquisition of language",
+      moduleNumber: 7,
+      title: "Varayti ng Wika at Varyasyon ng Wika",
+      description: "Language varieties and variations",
+      category: "Varieties",
+      color: "varieties",
       keyPoints: [
-        "Teoryang Ding-Dong - mula sa tunog ng mga bagay",
-        "Teoryang Bow-Wow - panggagaya sa tunog ng kalikasan",
-        "Teoryang Pooh-Pooh - mula sa emosyon at damdamin",
-        "Teoryang Ta-ra-ra-boom de ay - mula sa ritwal at sayaw",
-        "Teoryang Eureka - sadyang inimbento ang wika",
-        "Teorya ng Tore ng Babel - biblical explanation",
-        "Teorya ni Darwin - bahagi ng evolution",
-        "Teorya ni Chomsky (LAD) - likas na kakayahan sa wika",
-        "Teoryang Behaviorist - panggagaya at reinforcement"
+        "Varayti - iba't ibang anyo ng wika",
+        "Varyasyong Leksikal - pagkakaiba sa salita",
+        "Varyasyong Ponolohikal - pagkakaiba sa tunog",
+        "Varyasyong Gramatikal - paraan ng pagbubuo",
+        "Register - depende sa sitwasyon at kausap",
+        "Style - formal, informal, neutral"
       ],
       examples: [
-        "Ding-dong: kampana → 'kampana'",
-        "Bow-wow: tahol ng aso → 'aso'",
-        "Pooh-pooh: 'Aray!' dahil sa sakit",
-        "Mama/Papa - ginagamit sa buong mundo",
-        "LAD - Language Acquisition Device",
-        "Behaviorist - paulit-ulit na pagsasanay"
+        "Tagalog: 'Kumain ka na ba?' vs Cebuano: 'Ni kaon ka na?'",
+        "Regional accents sa Filipino",
+        "Formal: 'Magandang umaga po' vs Informal: 'Uy, musta'",
+        "Professional jargon vs everyday language"
       ]
     },
     {
-      id: 9,
-      title: "Wikang Pambansa, Opisyal, Panturo",
+      moduleNumber: 8,
+      title: "Idyolek, Dayalek, Sosyolek",
+      description: "Individual, dialectal, and social language varieties",
+      category: "Varieties",
+      color: "varieties",
+      keyPoints: [
+        "Idyolek - natatanging istilo ng bawat tao",
+        "Dayalek - wikang ginagamit sa tiyak na lugar",
+        "Sosyolek - wika ng partikular na grupo",
+        "Etnolek - wika ng mga ethnic group",
+        "Ekolek - wika sa loob ng tahanan",
+        "Mga salik: edad, kasarian, trabaho, edukasyon"
+      ],
+      examples: [
+        "Mike Enriquez: 'Excuse me po!'",
+        "Boy Abunda: 'Nakakalurky!'",
+        "Cebuano dayalek sa Mindanao",
+        "Gay lingo: 'Charot!', 'Shumalamush'"
+      ]
+    },
+    {
+      moduleNumber: 9,
+      title: "Lingua Franca, Pidgin at Creole",
+      description: "Contact languages and their development",
+      category: "Varieties",
+      color: "varieties",
+      keyPoints: [
+        "Lingua Franca - tulay sa pagitan ng iba't ibang wika",
+        "Pidgin - simplified na wika para sa trade",
+        "Creole - pidgin na naging natural na wika",
+        "Characteristics ng pidgin: walang native speakers",
+        "Creole development: may stable grammar na",
+        "Functions: trade, communication, identity"
+      ],
+      examples: [
+        "English - global lingua franca",
+        "Filipino - lingua franca sa Pilipinas",
+        "Chavacano - Spanish-based creole",
+        "Nigerian Pidgin English"
+      ]
+    },
+    {
+      moduleNumber: 10,
+      title: "Gamit at Kahalagahan ng Wika sa Lipunan",
+      description: "Functions and importance of language in society",
+      category: "Applications",
+      color: "applications",
+      keyPoints: [
+        "Halliday's 7 Functions:",
+        "1. Instrumental - ipahayag ang pangangailangan",
+        "2. Regulatory - kontrolin ang kilos",
+        "3. Interactional - mapanatili ang ugnayan",
+        "4. Personal - ipahayag ang damdamin",
+        "5. Heuristic - magtanong at mag-imbestiga",
+        "6. Imaginative - malikhain na paggamit",
+        "7. Representational - magbahagi ng impormasyon"
+      ],
+      examples: [
+        "Instrumental: 'Pabili po ng tinapay'",
+        "Regulatory: 'Bawal tumawid'",
+        "Interactional: 'Kumusta ka na?'",
+        "Personal: 'Masaya ako ngayon'",
+        "Heuristic: 'Bakit umuulan?'",
+        "Imaginative: pagsulat ng tula",
+        "Representational: 'Ang 2+2 = 4'"
+      ]
+    },
+    {
+      moduleNumber: 11,
+      title: "Wikang Pambansa, Wikang Opisyal at Wikang Panturo sa Pilipinas",
       description: "National, official, and instructional languages",
+      category: "Applications",
+      color: "applications",
       keyPoints: [
-        "Wikang Pambansa - pambansang pagkakakilanlan at sagisag ng pagkakaisa",
-        "Wikang Opisyal - pormal na gamit ng pamahalaan",
-        "Wikang Panturo - midyum ng pagtuturo at pagkatuto",
-        "Filipino - Wikang Pambansa",
-        "Filipino at Ingles - Wikang Opisyal",
-        "MTB-MLE - Mother Tongue-Based Multilingual Education"
+        "Wikang Pambansa - Filipino (nakabatay sa Tagalog)",
+        "Wikang Opisyal - Filipino at English (1987 Constitution)",
+        "Wikang Panturo - MTB-MLE sa K-3, Filipino/English sa 4-12",
+        "Language planning - deliberate efforts to influence language",
+        "Corpus planning vs Status planning",
+        "Implementation challenges at successes"
       ],
       examples: [
-        "Pambansa: Lupang Hinirang, SONA, panitikan",
-        "Opisyal: mga batas, pasaporte, korte",
-        "Panturo: K-3 (mother tongue), 4-12 (Filipino/English)",
-        "1987 Konstitusyon - Filipino at Ingles",
-        "DepEd K-12 Curriculum"
+        "Pambatang Makabayan sa Filipino",
+        "Court proceedings sa English/Filipino",
+        "Mother tongue sa kindergarten",
+        "Official documents sa dalawang wika",
+        "SONA - State of the Nation Address"
       ]
     }
   ],
   quizQuestions: [
     {
-      topicId: 1,
+      moduleNumber: 1,
       question: "Sino ang nagsabing ang wika ay binubuo ng mga arbitraryong tanda?",
       options: ["Ferdinand de Saussure", "Leonard Bloomfield", "Noam Chomsky", "Edward Sapir"],
       answer: 0,
       explanation: "Si Ferdinand de Saussure ang nagsabing ang wika ay binubuo ng mga arbitraryong tanda na nag-uugnay sa anyo at kahulugan."
     },
     {
-      topicId: 2,
+      moduleNumber: 2,
       question: "Alin sa mga sumusunod ang hindi katangian ng wika?",
       options: ["Arbitraryo", "Buhay at dinamiko", "Nanghihiram", "Hindi nagbabago"],
       answer: 3,
       explanation: "Ang wika ay buhay at dinamiko, ibig sabihin patuloy itong nagbabago at umuunlad."
     },
     {
-      topicId: 3,
-      question: "Ano ang tawag sa natatanging paraan ng pagsasalita ng bawat tao?",
-      options: ["Dayalek", "Sosyolek", "Idyolek", "Etnolek"],
-      answer: 2,
-      explanation: "Ang idyolek ay tumutukoy sa natatanging istilo ng pamamahayag at pananalita ng bawat indibidwal."
-    },
-    {
-      topicId: 4,
-      question: "Ano ang tawag sa wikang ginagamit ng mga pangkat etniko?",
-      options: ["Idyolek", "Dayalek", "Sosyolek", "Etnolek"],
-      answer: 3,
-      explanation: "Ang etnolek ay uri ng wika na ginagamit ng mga pangkat etniko o katutubo."
-    },
-    {
-      topicId: 5,
-      question: "Ano ang Chavacano?",
-      options: ["Pidgin", "Creole", "Lingua Franca", "Dayalek"],
-      answer: 1,
-      explanation: "Ang Chavacano ay isang creole na halong Kastila at wikang Bisaya."
-    },
-    {
-      topicId: 6,
-      question: "Ano ang pag-aaral ng ugnayan ng wika at lipunan?",
-      options: ["Linggwistika", "Sosyolinggwistika", "Sikolohiya", "Antropolohiya"],
-      answer: 1,
-      explanation: "Ang sosyolinggwistika ay pag-aaral ng ugnayan sa pagitan ng wika at lipunan."
-    },
-    {
-      topicId: 7,
-      question: "Alin sa mga sumusunod ang halimbawa ng Instrumental na gamit ng wika?",
-      options: ["Kumusta ka na?", "Pabili po ng adobo", "Bawal tumawid", "Ang 2+2 ay 4"],
-      answer: 1,
-      explanation: "Ang instrumental na gamit ay para ipahayag ang pangangailangan, tulad ng pag-order ng pagkain."
-    },
-    {
-      topicId: 8,
+      moduleNumber: 3,
       question: "Ano ang teoryang nagmula sa panggagaya sa tunog ng kalikasan?",
       options: ["Ding-Dong", "Bow-Wow", "Pooh-Pooh", "Eureka"],
       answer: 1,
       explanation: "Ang Teoryang Bow-Wow ay nagsasabing nagmula ang wika sa panggagaya sa mga tunog ng kalikasan."
     },
     {
-      topicId: 9,
-      question: "Ano ang wikang opisyal ng Pilipinas?",
+      moduleNumber: 4,
+      question: "Ano ang tawag sa paggamit ng dalawa o higit pang wika sa isang talakayan?",
+      options: ["Diglossia", "Code-switching", "Language shift", "Pidgin"],
+      answer: 1,
+      explanation: "Ang code-switching ay ang paggamit ng dalawa o higit pang wika sa loob ng isang conversation."
+    },
+    {
+      moduleNumber: 5,
+      question: "Ano ang pag-aaral ng ugnayan ng wika at lipunan?",
+      options: ["Linggwistika", "Sosyolinggwistika", "Sikolohiya", "Antropolohiya"],
+      answer: 1,
+      explanation: "Ang sosyolinggwistika ay pag-aaral ng ugnayan sa pagitan ng wika at lipunan."
+    },
+    {
+      moduleNumber: 6,
+      question: "Ano ang SPEAKING model sa ethnography of communication?",
+      options: ["Modelo ng pagkakaiba-iba", "Framework para sa pag-aaral ng komunikasyon", "Uri ng speech community", "Paraan ng pagtuturo"],
+      answer: 1,
+      explanation: "Ang SPEAKING model ay framework para sa pag-aaral ng komunikasyon sa loob ng kultura."
+    },
+    {
+      moduleNumber: 7,
+      question: "Ano ang tawag sa pagkakaiba sa mga salita ng magkaibang lugar?",
+      options: ["Varyasyong Ponolohikal", "Varyasyong Leksikal", "Varyasyong Gramatikal", "Register"],
+      answer: 1,
+      explanation: "Ang varyasyong leksikal ay tumutukoy sa pagkakaiba sa mga salita o bokabularyo."
+    },
+    {
+      moduleNumber: 8,
+      question: "Ano ang tawag sa natatanging paraan ng pagsasalita ng bawat tao?",
+      options: ["Dayalek", "Sosyolek", "Idyolek", "Etnolek"],
+      answer: 2,
+      explanation: "Ang idyolek ay tumutukoy sa natatanging istilo ng pamamahayag ng bawat indibidwal."
+    },
+    {
+      moduleNumber: 9,
+      question: "Ano ang Chavacano?",
+      options: ["Pidgin", "Creole", "Lingua Franca", "Dayalek"],
+      answer: 1,
+      explanation: "Ang Chavacano ay isang creole na nagmula sa Spanish at mga local na wika."
+    },
+    {
+      moduleNumber: 10,
+      question: "Alin sa mga sumusunod ang halimbawa ng Instrumental na gamit ng wika?",
+      options: ["Kumusta ka na?", "Pabili po ng adobo", "Bawal tumawid", "Ang 2+2 ay 4"],
+      answer: 1,
+      explanation: "Ang instrumental na gamit ay para ipahayag ang pangangailangan, tulad ng pag-order ng pagkain."
+    },
+    {
+      moduleNumber: 11,
+      question: "Ano ang mga wikang opisyal ng Pilipinas ayon sa 1987 Constitution?",
       options: ["Filipino lamang", "Ingles lamang", "Filipino at Ingles", "Tagalog at Ingles"],
       answer: 2,
       explanation: "Ayon sa 1987 Konstitusyon, ang Filipino at Ingles ang mga wikang opisyal ng Pilipinas."
@@ -270,22 +322,23 @@ const appData = {
 
 // Application State
 let currentState = {
-  currentTopic: null,
+  currentModule: null,
   currentMode: 'dashboard', // dashboard, study, quiz, results
   studyCardIndex: 0,
   quizQuestionIndex: 0,
   quizAnswers: [],
-  topicProgress: {},
+  moduleProgress: {},
   isRandomQuiz: false
 };
 
-// Initialize progress for all topics
-appData.topics.forEach(topic => {
-  currentState.topicProgress[topic.id] = {
+// Initialize progress for all modules
+appData.modules.forEach(module => {
+  currentState.moduleProgress[module.moduleNumber] = {
     studyCompleted: false,
     quizCompleted: false,
     quizScore: 0,
-    status: 'not-started'
+    status: 'not-started',
+    progress: 0
   };
 });
 
@@ -294,11 +347,11 @@ const dashboard = document.getElementById('dashboard');
 const studyMode = document.getElementById('studyMode');
 const quizMode = document.getElementById('quizMode');
 const quizResults = document.getElementById('quizResults');
-const topicsGrid = document.getElementById('topicsGrid');
+const modulesGrid = document.getElementById('modulesGrid');
 
 // Initialize Application
 document.addEventListener('DOMContentLoaded', function() {
-  renderTopics();
+  renderModules();
   updateOverallProgress();
   attachEventListeners();
 });
@@ -310,10 +363,12 @@ function attachEventListeners() {
   document.getElementById('randomQuizBtn').addEventListener('click', startRandomQuiz);
   
   // Study mode navigation
-  document.getElementById('backToTopics').addEventListener('click', showDashboard);
+  document.getElementById('backToModules').addEventListener('click', showDashboard);
   document.getElementById('prevCard').addEventListener('click', previousStudyCard);
   document.getElementById('nextCard').addEventListener('click', nextStudyCard);
   document.getElementById('startQuizFromStudy').addEventListener('click', startQuizFromStudy);
+  document.getElementById('prevModuleBtn').addEventListener('click', goToPreviousModule);
+  document.getElementById('nextModuleBtn').addEventListener('click', goToNextModule);
   
   // Quiz mode navigation
   document.getElementById('backFromQuiz').addEventListener('click', () => {
@@ -328,55 +383,61 @@ function attachEventListeners() {
   // Results navigation
   document.getElementById('retakeQuiz').addEventListener('click', retakeQuiz);
   document.getElementById('backToDashboard').addEventListener('click', showDashboard);
+  document.getElementById('prevModuleFromResults').addEventListener('click', goToPreviousModuleFromResults);
+  document.getElementById('nextModuleFromResults').addEventListener('click', goToNextModuleFromResults);
 }
 
 // Render Functions
-function renderTopics() {
-  topicsGrid.innerHTML = '';
+function renderModules() {
+  modulesGrid.innerHTML = '';
   
-  appData.topics.forEach(topic => {
-    const progress = currentState.topicProgress[topic.id];
-    const topicCard = createTopicCard(topic, progress);
-    topicsGrid.appendChild(topicCard);
+  appData.modules.forEach(module => {
+    const progress = currentState.moduleProgress[module.moduleNumber];
+    const moduleCard = createModuleCard(module, progress);
+    modulesGrid.appendChild(moduleCard);
   });
 }
 
-function createTopicCard(topic, progress) {
+function createModuleCard(module, progress) {
   const card = document.createElement('div');
-  card.className = `topic-card topic-card--${progress.status}`;
+  card.className = `module-card module-card--${module.color}`;
+  
+  if (progress.status === 'completed') {
+    card.classList.add('module-card--completed');
+  }
   
   card.innerHTML = `
-    <div class="topic-header">
-      <h3 class="topic-title">${topic.title}</h3>
-      <span class="topic-status topic-status--${progress.status}">
-        ${getStatusText(progress.status)}
+    <div class="module-header">
+      <div>
+        <div class="module-number">Module ${module.moduleNumber}</div>
+        <h3 class="module-title">${module.title}</h3>
+      </div>
+      <span class="module-category module-category--${module.color}">
+        ${module.category}
       </span>
     </div>
-    <p class="topic-description">${topic.description}</p>
-    <div class="topic-actions">
-      <button class="btn btn--primary study-btn" data-topic-id="${topic.id}">
-        📚 Mag-aral
+    <p class="module-description">${module.description}</p>
+    <div class="module-progress">
+      <div class="progress-indicator">
+        <div class="progress-indicator-fill" style="width: ${progress.progress}%"></div>
+      </div>
+      <span>${progress.progress}% Complete</span>
+    </div>
+    <div class="module-actions">
+      <button class="btn btn--primary study-btn" data-module-number="${module.moduleNumber}">
+        📚 Study
       </button>
-      <button class="btn btn--secondary quiz-btn" data-topic-id="${topic.id}">
+      <button class="btn btn--secondary quiz-btn" data-module-number="${module.moduleNumber}">
         📝 Quiz
       </button>
     </div>
   `;
   
   // Add event listeners
-  card.querySelector('.study-btn').addEventListener('click', () => startStudy(topic.id));
-  card.querySelector('.quiz-btn').addEventListener('click', () => startQuiz(topic.id));
+  card.querySelector('.study-btn').addEventListener('click', () => startStudy(module.moduleNumber));
+  card.querySelector('.quiz-btn').addEventListener('click', () => startQuiz(module.moduleNumber));
   
   return card;
-}
-
-function getStatusText(status) {
-  const statusTexts = {
-    'not-started': 'Hindi pa Nasimulan',
-    'in-progress': 'Ginagawa',
-    'completed': 'Tapos na'
-  };
-  return statusTexts[status];
 }
 
 // Navigation Functions
@@ -385,6 +446,7 @@ function showDashboard() {
   dashboard.classList.remove('hidden');
   currentState.currentMode = 'dashboard';
   updateOverallProgress();
+  updateDashboardStats();
 }
 
 function showStudyMode() {
@@ -413,8 +475,8 @@ function hideAllSections() {
 }
 
 // Study Mode Functions
-function startStudy(topicId) {
-  currentState.currentTopic = appData.topics.find(t => t.id === topicId);
+function startStudy(moduleNumber) {
+  currentState.currentModule = appData.modules.find(m => m.moduleNumber === moduleNumber);
   currentState.studyCardIndex = 0;
   currentState.isRandomQuiz = false;
   
@@ -423,7 +485,7 @@ function startStudy(topicId) {
 }
 
 function startStudyAll() {
-  currentState.currentTopic = appData.topics[0];
+  currentState.currentModule = appData.modules[0];
   currentState.studyCardIndex = 0;
   currentState.isRandomQuiz = false;
   
@@ -432,30 +494,32 @@ function startStudyAll() {
 }
 
 function setupStudyMode() {
-  const topic = currentState.currentTopic;
-  document.getElementById('studyTopicTitle').textContent = topic.title;
+  const module = currentState.currentModule;
+  document.getElementById('currentModuleBreadcrumb').textContent = `Module ${module.moduleNumber} of 11`;
+  document.getElementById('studyModuleTitle').textContent = `Module ${module.moduleNumber}: ${module.title}`;
   
   renderStudyCard();
   updateStudyProgress();
+  updateModuleNavigationButtons();
 }
 
 function renderStudyCard() {
-  const topic = currentState.currentTopic;
+  const module = currentState.currentModule;
   const cardIndex = currentState.studyCardIndex;
-  const totalCards = topic.keyPoints.length + topic.examples.length;
+  const totalCards = module.keyPoints.length + module.examples.length;
   
   let cardContent;
   let cardTitle;
   
-  if (cardIndex < topic.keyPoints.length) {
+  if (cardIndex < module.keyPoints.length) {
     // Show key points
-    cardTitle = 'Mga Pangunahing Punto';
-    cardContent = `<ul><li>${topic.keyPoints[cardIndex]}</li></ul>`;
+    cardTitle = 'Key Points';
+    cardContent = `<ul><li>${module.keyPoints[cardIndex]}</li></ul>`;
   } else {
     // Show examples
-    const exampleIndex = cardIndex - topic.keyPoints.length;
-    cardTitle = 'Mga Halimbawa';
-    cardContent = `<ul><li>${topic.examples[exampleIndex]}</li></ul>`;
+    const exampleIndex = cardIndex - module.keyPoints.length;
+    cardTitle = 'Examples';
+    cardContent = `<ul><li>${module.examples[exampleIndex]}</li></ul>`;
   }
   
   document.getElementById('studyCardTitle').textContent = cardTitle;
@@ -475,36 +539,55 @@ function previousStudyCard() {
 }
 
 function nextStudyCard() {
-  const topic = currentState.currentTopic;
-  const totalCards = topic.keyPoints.length + topic.examples.length;
+  const module = currentState.currentModule;
+  const totalCards = module.keyPoints.length + module.examples.length;
   
   if (currentState.studyCardIndex < totalCards - 1) {
     currentState.studyCardIndex++;
     renderStudyCard();
   } else {
     // Mark study as completed
-    const progress = currentState.topicProgress[topic.id];
+    const progress = currentState.moduleProgress[module.moduleNumber];
     progress.studyCompleted = true;
-    updateTopicStatus(topic.id);
-    renderTopics();
+    updateModuleStatus(module.moduleNumber);
+    renderModules();
   }
 }
 
+function goToPreviousModule() {
+  const currentModuleNumber = currentState.currentModule.moduleNumber;
+  if (currentModuleNumber > 1) {
+    startStudy(currentModuleNumber - 1);
+  }
+}
+
+function goToNextModule() {
+  const currentModuleNumber = currentState.currentModule.moduleNumber;
+  if (currentModuleNumber < 11) {
+    startStudy(currentModuleNumber + 1);
+  }
+}
+
+function updateModuleNavigationButtons() {
+  const currentModuleNumber = currentState.currentModule.moduleNumber;
+  document.getElementById('prevModuleBtn').disabled = currentModuleNumber === 1;
+  document.getElementById('nextModuleBtn').disabled = currentModuleNumber === 11;
+}
+
 function updateStudyProgress() {
-  const topic = currentState.currentTopic;
-  const totalCards = topic.keyPoints.length + topic.examples.length;
-  const progress = ((currentState.studyCardIndex + 1) / totalCards) * 100;
+  const module = currentState.currentModule;
+  const totalCards = module.keyPoints.length + module.examples.length;
   
   document.getElementById('cardCounter').textContent = `${currentState.studyCardIndex + 1} / ${totalCards}`;
 }
 
 function startQuizFromStudy() {
-  startQuiz(currentState.currentTopic.id);
+  startQuiz(currentState.currentModule.moduleNumber);
 }
 
 // Quiz Mode Functions
-function startQuiz(topicId) {
-  currentState.currentTopic = appData.topics.find(t => t.id === topicId);
+function startQuiz(moduleNumber) {
+  currentState.currentModule = appData.modules.find(m => m.moduleNumber === moduleNumber);
   currentState.quizQuestionIndex = 0;
   currentState.quizAnswers = [];
   currentState.isRandomQuiz = false;
@@ -514,7 +597,7 @@ function startQuiz(topicId) {
 }
 
 function startRandomQuiz() {
-  currentState.currentTopic = null;
+  currentState.currentModule = null;
   currentState.quizQuestionIndex = 0;
   currentState.quizAnswers = [];
   currentState.isRandomQuiz = true;
@@ -524,15 +607,17 @@ function startRandomQuiz() {
 }
 
 function setupQuizMode() {
-  const topic = currentState.currentTopic;
-  document.getElementById('quizTopicTitle').textContent = topic.title;
+  const module = currentState.currentModule;
+  document.getElementById('quizModuleBreadcrumb').textContent = `Module ${module.moduleNumber} of 11`;
+  document.getElementById('quizModuleTitle').textContent = `Module ${module.moduleNumber}: ${module.title}`;
   
   renderQuizQuestion();
   updateQuizProgress();
 }
 
 function setupRandomQuizMode() {
-  document.getElementById('quizTopicTitle').textContent = 'Random Quiz - Lahat ng Topics';
+  document.getElementById('quizModuleBreadcrumb').textContent = 'Random Quiz';
+  document.getElementById('quizModuleTitle').textContent = 'All Modules Quiz';
   
   renderQuizQuestion();
   updateQuizProgress();
@@ -543,8 +628,8 @@ function getQuizQuestions() {
     // Return all questions shuffled
     return [...appData.quizQuestions].sort(() => Math.random() - 0.5);
   } else {
-    // Return questions for current topic
-    return appData.quizQuestions.filter(q => q.topicId === currentState.currentTopic.id);
+    // Return questions for current module
+    return appData.quizQuestions.filter(q => q.moduleNumber === currentState.currentModule.moduleNumber);
   }
 }
 
@@ -617,7 +702,7 @@ function showQuizFeedback(isCorrect, explanation) {
   const feedbackExplanation = document.getElementById('feedbackExplanation');
   
   feedbackIcon.textContent = isCorrect ? '✅' : '❌';
-  feedbackText.textContent = isCorrect ? 'Tama!' : 'Mali!';
+  feedbackText.textContent = isCorrect ? 'Correct!' : 'Incorrect!';
   feedbackText.className = `feedback-text ${isCorrect ? 'correct' : 'incorrect'}`;
   feedbackExplanation.textContent = explanation;
   
@@ -652,10 +737,17 @@ function showQuizResults() {
   
   // Update progress if not random quiz
   if (!currentState.isRandomQuiz) {
-    const progress = currentState.topicProgress[currentState.currentTopic.id];
+    const progress = currentState.moduleProgress[currentState.currentModule.moduleNumber];
     progress.quizCompleted = true;
     progress.quizScore = percentage;
-    updateTopicStatus(currentState.currentTopic.id);
+    updateModuleStatus(currentState.currentModule.moduleNumber);
+    
+    // Show module complete badge if both study and quiz are completed
+    if (progress.studyCompleted && progress.quizCompleted) {
+      document.getElementById('moduleCompleteBadge').classList.remove('hidden');
+    }
+    
+    updateResultsModuleNavigation();
   }
   
   // Display results
@@ -664,53 +756,85 @@ function showQuizResults() {
   document.getElementById('incorrectAnswers').textContent = totalQuestions - correctAnswers;
   document.getElementById('totalQuestions').textContent = totalQuestions;
   
-  let summaryText = `Nakakuha ka ng ${correctAnswers} na tama sa ${totalQuestions} na tanong.`;
+  let summaryText = `You got ${correctAnswers} out of ${totalQuestions} questions correct.`;
   if (percentage >= 80) {
-    summaryText += ' Napakahusay!';
+    summaryText += ' Excellent work!';
   } else if (percentage >= 60) {
-    summaryText += ' Mabuti naman!';
+    summaryText += ' Good job!';
   } else {
-    summaryText += ' Kailangan mo pang mag-aral.';
+    summaryText += ' Keep studying!';
   }
   
   document.getElementById('resultsSummary').textContent = summaryText;
   
-  renderTopics();
+  renderModules();
   showResults();
+}
+
+function updateResultsModuleNavigation() {
+  const currentModuleNumber = currentState.currentModule.moduleNumber;
+  document.getElementById('prevModuleFromResults').disabled = currentModuleNumber === 1;
+  document.getElementById('nextModuleFromResults').disabled = currentModuleNumber === 11;
+}
+
+function goToPreviousModuleFromResults() {
+  const currentModuleNumber = currentState.currentModule.moduleNumber;
+  if (currentModuleNumber > 1) {
+    startQuiz(currentModuleNumber - 1);
+  }
+}
+
+function goToNextModuleFromResults() {
+  const currentModuleNumber = currentState.currentModule.moduleNumber;
+  if (currentModuleNumber < 11) {
+    startQuiz(currentModuleNumber + 1);
+  }
 }
 
 function retakeQuiz() {
   if (currentState.isRandomQuiz) {
     startRandomQuiz();
   } else {
-    startQuiz(currentState.currentTopic.id);
+    startQuiz(currentState.currentModule.moduleNumber);
   }
 }
 
 // Progress Functions
-function updateTopicStatus(topicId) {
-  const progress = currentState.topicProgress[topicId];
+function updateModuleStatus(moduleNumber) {
+  const progress = currentState.moduleProgress[moduleNumber];
   
   if (progress.studyCompleted && progress.quizCompleted) {
     progress.status = 'completed';
+    progress.progress = 100;
   } else if (progress.studyCompleted || progress.quizCompleted) {
     progress.status = 'in-progress';
+    progress.progress = 50;
   } else {
     progress.status = 'not-started';
+    progress.progress = 0;
   }
 }
 
 function updateOverallProgress() {
-  const totalTopics = appData.topics.length;
-  const completedTopics = Object.values(currentState.topicProgress)
+  const totalModules = appData.modules.length;
+  const completedModules = Object.values(currentState.moduleProgress)
     .filter(p => p.status === 'completed').length;
   
-  const percentage = Math.round((completedTopics / totalTopics) * 100);
-  
-  document.querySelector('.progress-text').textContent = `${percentage}%`;
+  document.querySelector('.progress-text').textContent = `${completedModules}/11`;
   
   // Update progress circle
   const circle = document.querySelector('.progress-circle');
-  const degrees = (completedTopics / totalTopics) * 360;
+  const degrees = (completedModules / totalModules) * 360;
   circle.style.background = `conic-gradient(var(--color-filipino-blue) ${degrees}deg, var(--color-border) ${degrees}deg)`;
+}
+
+function updateDashboardStats() {
+  const totalModules = appData.modules.length;
+  const completedModules = Object.values(currentState.moduleProgress)
+    .filter(p => p.status === 'completed').length;
+  const inProgressModules = Object.values(currentState.moduleProgress)
+    .filter(p => p.status === 'in-progress').length;
+  
+  document.getElementById('completedModules').textContent = completedModules;
+  document.getElementById('inProgressModules').textContent = inProgressModules;
 }
