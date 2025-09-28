@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FIL101 Comprehensive Study Guide</title>
+    <title>FIL101 Study Guide - 11 Modules</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <!-- Header -->
         <header class="app-header">
-            <h1>FIL101 Comprehensive Study Guide</h1>
-            <p class="subtitle">Wika at Kultura - Enhanced Content & Extensive Quizzes</p>
+            <h1>FIL101 Study Guide</h1>
+            <p class="subtitle">Wika at Kultura sa Mapayapang Lipunan - 11 Modules</p>
             <div class="progress-summary">
                 <div class="progress-circle">
                     <span class="progress-text">0/11</span>
@@ -28,25 +28,21 @@
                     <div class="stat-label">Completed Modules</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number" id="totalStudyCards">88</div>
-                    <div class="stat-label">Total Study Cards</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number" id="totalQuizQuestions">165</div>
-                    <div class="stat-label">Quiz Questions</div>
-                </div>
-                <div class="stat-card">
                     <div class="stat-number" id="inProgressModules">0</div>
                     <div class="stat-label">In Progress</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">11</div>
+                    <div class="stat-label">Total Modules</div>
                 </div>
             </div>
 
             <div class="dashboard-actions">
                 <button class="btn btn--primary btn--lg" id="studyAllBtn">
-                    📚 Study All Modules (Sequential)
+                    📚 Study All Modules
                 </button>
                 <button class="btn btn--secondary btn--lg" id="randomQuizBtn">
-                    🎲 Mixed Quiz (All Topics)
+                    🎲 Random Quiz (All Modules)
                 </button>
             </div>
             
@@ -58,25 +54,16 @@
         <!-- Study Mode -->
         <section id="studyMode" class="study-mode hidden">
             <div class="study-header">
-                <button class="btn btn--outline" id="backToModules">← Back to Dashboard</button>
+                <button class="btn btn--outline" id="backToModules">← Back to Modules</button>
                 <div class="study-title-section">
                     <div class="module-breadcrumb">
                         <span id="currentModuleBreadcrumb">Module 1 of 11</span>
                     </div>
                     <h2 id="studyModuleTitle">Module Title</h2>
-                    <p id="studyModuleDescription" class="module-desc">Module description</p>
                 </div>
                 <div class="study-progress">
-                    <span id="cardCounter">1 / 8</span>
+                    <span id="cardCounter">1 / 5</span>
                 </div>
-            </div>
-
-            <!-- Learning Objectives -->
-            <div class="learning-objectives" id="learningObjectives">
-                <h3>📋 Learning Objectives</h3>
-                <ul id="objectivesList">
-                    <!-- Objectives will be populated -->
-                </ul>
             </div>
             
             <div class="study-card-container">
@@ -84,36 +71,17 @@
                     <div class="card-content">
                         <h3 class="card-title" id="studyCardTitle"></h3>
                         <div class="card-body" id="studyCardContent"></div>
-                        <div class="card-actions">
-                            <button class="btn btn--outline btn--sm" id="bookmarkCard">🔖 Bookmark</button>
-                            <button class="btn btn--outline btn--sm" id="takeNotes">📝 Notes</button>
-                        </div>
                     </div>
                 </div>
                 
                 <div class="study-navigation">
-                    <button class="btn btn--secondary" id="prevCard">← Previous Card</button>
-                    <div class="card-indicator">
-                        <div class="card-dots" id="cardDots">
-                            <!-- Dots will be generated -->
-                        </div>
-                    </div>
-                    <button class="btn btn--primary" id="nextCard">Next Card →</button>
-                </div>
-            </div>
-
-            <!-- Notes Section -->
-            <div class="notes-section hidden" id="notesSection">
-                <h4>📝 Your Notes for This Card</h4>
-                <textarea id="cardNotes" class="form-control" rows="4" placeholder="Add your notes here..."></textarea>
-                <div class="notes-actions">
-                    <button class="btn btn--primary btn--sm" id="saveNotes">Save Notes</button>
-                    <button class="btn btn--outline btn--sm" id="closeNotes">Close</button>
+                    <button class="btn btn--secondary" id="prevCard">← Previous</button>
+                    <button class="btn btn--primary" id="nextCard">Next →</button>
                 </div>
             </div>
             
             <div class="study-actions">
-                <button class="btn btn--primary btn--lg" id="startQuizFromStudy">📝 Take Comprehensive Quiz (15+ Questions)</button>
+                <button class="btn btn--primary" id="startQuizFromStudy">Take Quiz for This Module</button>
                 <div class="module-navigation">
                     <button class="btn btn--outline" id="prevModuleBtn">← Previous Module</button>
                     <button class="btn btn--outline" id="nextModuleBtn">Next Module →</button>
@@ -135,13 +103,12 @@
                     <div class="progress-bar">
                         <div class="progress-fill" id="quizProgressFill"></div>
                     </div>
-                    <span id="questionCounter">1 / 15</span>
+                    <span id="questionCounter">1 / 5</span>
                 </div>
             </div>
             
             <div class="quiz-container">
                 <div class="question-card" id="questionCard">
-                    <div class="question-difficulty" id="questionDifficulty">Easy</div>
                     <h3 class="question-text" id="questionText"></h3>
                     <div class="options-container" id="optionsContainer">
                         <!-- Options will be dynamically generated -->
@@ -150,13 +117,11 @@
                 
                 <div class="quiz-feedback hidden" id="quizFeedback">
                     <div class="feedback-content">
-                        <div class="feedback-header">
-                            <div class="feedback-icon" id="feedbackIcon"></div>
-                            <p class="feedback-text" id="feedbackText"></p>
-                        </div>
-                        <div class="feedback-explanation" id="feedbackExplanation"></div>
+                        <div class="feedback-icon" id="feedbackIcon"></div>
+                        <p class="feedback-text" id="feedbackText"></p>
+                        <p class="feedback-explanation" id="feedbackExplanation"></p>
                     </div>
-                    <button class="btn btn--primary" id="nextQuestion">Next Question →</button>
+                    <button class="btn btn--primary" id="nextQuestion">Next Question</button>
                 </div>
             </div>
         </section>
@@ -164,7 +129,7 @@
         <!-- Quiz Results -->
         <section id="quizResults" class="quiz-results hidden">
             <div class="results-header">
-                <h2>📊 Quiz Results</h2>
+                <h2>Quiz Results</h2>
                 <div class="module-complete-badge hidden" id="moduleCompleteBadge">
                     🏆 Module Complete!
                 </div>
@@ -173,7 +138,6 @@
             <div class="results-content">
                 <div class="score-circle">
                     <span class="score-text" id="finalScore">0%</span>
-                    <span class="score-grade" id="scoreGrade">Grade</span>
                 </div>
                 
                 <div class="results-details">
@@ -192,43 +156,15 @@
                             <span class="breakdown-value" id="totalQuestions">0</span>
                         </div>
                     </div>
-                    
-                    <!-- Performance Analysis -->
-                    <div class="performance-analysis">
-                        <h4>📈 Performance Analysis</h4>
-                        <div class="difficulty-breakdown" id="difficultyBreakdown">
-                            <!-- Difficulty performance will be shown -->
-                        </div>
-                    </div>
                 </div>
             </div>
             
             <div class="results-actions">
-                <button class="btn btn--primary" id="retakeQuiz">🔄 Retake Quiz</button>
-                <button class="btn btn--secondary" id="reviewMistakes">📖 Review Mistakes</button>
-                <button class="btn btn--outline" id="backToDashboard">← Back to Dashboard</button>
+                <button class="btn btn--primary" id="retakeQuiz">Retake Quiz</button>
+                <button class="btn btn--secondary" id="backToDashboard">Back to Modules</button>
                 <div class="module-navigation">
                     <button class="btn btn--outline" id="prevModuleFromResults">← Previous Module</button>
                     <button class="btn btn--outline" id="nextModuleFromResults">Next Module →</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Review Mode (for mistakes) -->
-        <section id="reviewMode" class="review-mode hidden">
-            <div class="review-header">
-                <button class="btn btn--outline" id="backFromReview">← Back to Results</button>
-                <h2>📖 Review Incorrect Answers</h2>
-            </div>
-            
-            <div class="review-container">
-                <div class="review-question" id="reviewQuestion">
-                    <!-- Review content will be populated -->
-                </div>
-                <div class="review-navigation">
-                    <button class="btn btn--secondary" id="prevReviewQuestion">← Previous</button>
-                    <span id="reviewCounter">1 / 5</span>
-                    <button class="btn btn--secondary" id="nextReviewQuestion">Next →</button>
                 </div>
             </div>
         </section>
