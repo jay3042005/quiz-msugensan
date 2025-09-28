@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIL101 Study Guide - Wika at Kultura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="app-header">
+            <h1>FIL101 Study Guide</h1>
+            <p class="subtitle">Wika at Kultura sa Mapayapang Lipunan</p>
+            <div class="progress-summary">
+                <div class="progress-circle">
+                    <span class="progress-text">0%</span>
+                </div>
+                <p class="progress-label">Kabuuang Progress</p>
+            </div>
+        </header>
+
+        <!-- Main Dashboard -->
+        <main id="dashboard" class="dashboard">
+            <div class="dashboard-actions">
+                <button class="btn btn--primary btn--lg" id="studyAllBtn">
+                    📚 Mag-aral ng Lahat
+                </button>
+                <button class="btn btn--secondary btn--lg" id="randomQuizBtn">
+                    🎲 Random Quiz
+                </button>
+            </div>
+            
+            <div class="topics-grid" id="topicsGrid">
+                <!-- Topics will be dynamically generated -->
+            </div>
+        </main>
+
+        <!-- Study Mode -->
+        <section id="studyMode" class="study-mode hidden">
+            <div class="study-header">
+                <button class="btn btn--outline" id="backToTopics">← Bumalik sa Topics</button>
+                <h2 id="studyTopicTitle"></h2>
+                <div class="study-progress">
+                    <span id="cardCounter">1 / 5</span>
+                </div>
+            </div>
+            
+            <div class="study-card-container">
+                <div class="study-card" id="studyCard">
+                    <div class="card-content">
+                        <h3 class="card-title" id="studyCardTitle"></h3>
+                        <div class="card-body" id="studyCardContent"></div>
+                    </div>
+                </div>
+                
+                <div class="study-navigation">
+                    <button class="btn btn--secondary" id="prevCard">← Nakaraan</button>
+                    <button class="btn btn--primary" id="nextCard">Susunod →</button>
+                </div>
+            </div>
+            
+            <div class="study-actions">
+                <button class="btn btn--primary" id="startQuizFromStudy">Simulan ang Quiz</button>
+            </div>
+        </section>
+
+        <!-- Quiz Mode -->
+        <section id="quizMode" class="quiz-mode hidden">
+            <div class="quiz-header">
+                <button class="btn btn--outline" id="backFromQuiz">← Bumalik</button>
+                <h2 id="quizTopicTitle"></h2>
+                <div class="quiz-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="quizProgressFill"></div>
+                    </div>
+                    <span id="questionCounter">1 / 5</span>
+                </div>
+            </div>
+            
+            <div class="quiz-container">
+                <div class="question-card" id="questionCard">
+                    <h3 class="question-text" id="questionText"></h3>
+                    <div class="options-container" id="optionsContainer">
+                        <!-- Options will be dynamically generated -->
+                    </div>
+                </div>
+                
+                <div class="quiz-feedback hidden" id="quizFeedback">
+                    <div class="feedback-content">
+                        <div class="feedback-icon" id="feedbackIcon"></div>
+                        <p class="feedback-text" id="feedbackText"></p>
+                        <p class="feedback-explanation" id="feedbackExplanation"></p>
+                    </div>
+                    <button class="btn btn--primary" id="nextQuestion">Susunod na Tanong</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quiz Results -->
+        <section id="quizResults" class="quiz-results hidden">
+            <div class="results-header">
+                <h2>Resulta ng Quiz</h2>
+            </div>
+            
+            <div class="results-content">
+                <div class="score-circle">
+                    <span class="score-text" id="finalScore">0%</span>
+                </div>
+                
+                <div class="results-details">
+                    <p class="results-summary" id="resultsSummary"></p>
+                    <div class="results-breakdown">
+                        <div class="breakdown-item">
+                            <span class="breakdown-label">Tama:</span>
+                            <span class="breakdown-value correct" id="correctAnswers">0</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span class="breakdown-label">Mali:</span>
+                            <span class="breakdown-value incorrect" id="incorrectAnswers">0</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span class="breakdown-label">Kabuuan:</span>
+                            <span class="breakdown-value" id="totalQuestions">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="results-actions">
+                <button class="btn btn--primary" id="retakeQuiz">Ulitin ang Quiz</button>
+                <button class="btn btn--secondary" id="backToDashboard">Bumalik sa Dashboard</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
